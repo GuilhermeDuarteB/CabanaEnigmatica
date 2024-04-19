@@ -1,0 +1,29 @@
+body {
+  background-color: #555;
+  color: white;
+}
+table {
+  background-color: #666;
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid white;
+}
+th, td {
+  padding: 8px;
+}
+th {
+  background-color: #ccc7c7;
+}
+input[type="text"] {
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+#triangle {
+  display: block;
+  margin: auto;
+}
