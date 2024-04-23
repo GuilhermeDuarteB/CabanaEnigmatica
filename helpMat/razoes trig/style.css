@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+max-height: 280VH;
+    font-family: "Inter", sans-serif;
 }
 .dropdown-menu ul {
   list-style-type: none;
@@ -33,10 +34,9 @@
 }
 
 
-
-
 body{
     background-color: #676F84;
+    font-family: "Inter", sans-serif;
 }
 
   
@@ -126,4 +126,91 @@ nav li a{
 
 a.linklogo:active,a.linklogo:hover{       
 background: transparent;
+}
+
+
+.box {
+    width: calc(100% - 40px);
+    max-width: 1300px;
+    height: 270vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; 
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 1350px;
+  }
+  
+  
+  
+  
+  .box h1{
+    margin-top: 25px;
+    font-family: "Inter", sans-serif;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+    
+  
+  .box p{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 20px;
+    clear: both;
+  }
+  
+  .box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  margin-top: 50px;
+  }
+
+  .box li{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+
+  img[alt="img3"] {
+    width: 25%;
+    height: auto;
+    float: left;
+    clear: both;
+  }
+
+  img[alt="img4"] {
+    width: 25%;
+    height: auto;
+    float: left;
+    clear: both;
+  }
+
+  img[alt="img5"] {
+    width: 25%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-bottom: 50px;
+  }
+
+  table {
+    margin-top: 70px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
 }

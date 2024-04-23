@@ -2,8 +2,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+  max-height: 470vh;
 }
+
 .dropdown-menu ul {
   list-style-type: none;
   padding: 0;
@@ -33,10 +34,9 @@
 }
 
 
-
-
 body{
     background-color: #676F84;
+    font-family: "Inter", sans-serif;
 }
 
   
@@ -126,4 +126,31 @@ nav li a{
 
 a.linklogo:active,a.linklogo:hover{       
 background: transparent;
+}
+
+
+table {
+  background-color: #666;
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid white;
+}
+th, td {
+  padding: 8px;
+}
+th {
+  background-color: #ccc7c7;
+}
+input[type="text"] {
+  background-color: #777;
+  color: white;
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+#triangle {
+  display: block;
+  margin: auto;
 }
