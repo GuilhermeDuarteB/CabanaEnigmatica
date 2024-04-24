@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
   max-height: 470vh;
+  font-family: "Inter", sans-serif;
 }
 .dropdown-menu ul {
   list-style-type: none;
@@ -131,7 +132,7 @@ background: transparent;
 .box {
   width: calc(100% - 40px);
   max-width: 1300px;
-  height: 450vh;
+  height: 452vh;
   position: relative;
   top: 50%;
   left: 50%;

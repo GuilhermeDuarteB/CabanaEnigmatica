@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triângulo Retângulo  Calculadora | Cabana Enigmática</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/430134e04b.js" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -32,43 +32,40 @@
                     <div class="dropdown-menu">
                         <ul>
                         <li><a href="../../calculadoras/calculator/index.html">Calculadora</a></li>   
-                        <li><a href="index.html">Triângulo Retângulo</a></li>
-						<li><a href="../c.trig calc/index.html">Circulo Trigonométrico</a></li>
+                        <li><a href="../../calculadoras/t.retangulo calculadora/index.html">Triângulo Retângulo</a></li>~
+                        <li><a href="index.html">Circulo Trigonométrico</a></li>
                     </ul>   
                     </div>
                     </li>
             </ul>
         </nav>
     </header>
-    <h1>Triângulo Retangular</h1>
-    <label for="alpha">Ângulo Alfa (em graus):</label>
-    <input type="text" id="alpha" placeholder="Digite o ângulo alfa">
-    <br><br>
-    <table>
-        <tr>
-            <th>Lado X</th>
-            <th>Lado Y</th>
-            <th>Lado Z</th>
-        </tr>
-        <tr>
-            <td><input type="text" id="x" placeholder="Digite o valor de x"></td>
-            <td><input type="text" id="y" placeholder="Digite o valor de y"></td>
-            <td><input type="text" id="z" placeholder="Digite o valor de z"></td>
-        </tr>
-    </table>
-    <br>
-    <svg id="triangle" width="200" height="20   0">
-        <polygon points="10,10 10,190 190,190" fill="gray" />
-        <text x="11" y="185" fill="black">90°</text>
-        <text x="190" y="185" fill="black">α</text>
-        <text x="10" y="10" fill="black">Y</text>
-        <text x="10" y="200" fill="black">X</text>
-        <text x="95" y="100" fill="black">Z</text>
-    </svg>
-
-    <div class="container">
-    <button onclick="calcularLadosManual()">Calcular Lados</button>
+<h1>TRIGONOMETRIA</h1>
+<div id="container">
+    <div id="angle-input-container">
+        <p>Insira um ângulo (em graus): <input type="number" id="angleInput" value="0"></p>
+        <button onclick="calculateTrigFunctions()">Calcular</button>
+        <p>Tangente: <span id="tangentResult"></span></p>
+        <p>Seno: <span id="sineResult"></span></p>
+        <p>Cosseno: <span id="cosineResult"></span></p>
+    </div>
+    <div id="circle-container">
+        <div id="circle">
+            <div id="horizontal-line"></div>
+            <div id="vertical-line"></div>
+            <div id="angleMarker"></div>
+            <div class="division" style="transform: rotate(90deg);"></div>
+            <div class="angle-label angle-label-90" style="left: 48%; top: -6%;">90°</div>
+            <div class="division" style="transform: rotate(90deg);"></div>
+            <div class="angle-label angle-label-0" style="left: 102%; top: 49%;">0°</div>
+            <div class="division" style="transform: rotate(270deg);"></div>
+            <div class="angle-label angle-label-270" style="left: 47%; bottom:-6%;">270°</div>
+            <div class="division" style="transform: rotate(180deg);"></div>
+            <div class="angle-label angle-label-180" style="left: -10%; top: 48%;">180°</div>
+        </div>
+    </div>
 </div>
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>

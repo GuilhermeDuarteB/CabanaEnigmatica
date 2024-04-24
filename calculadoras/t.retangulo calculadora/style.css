@@ -154,3 +154,10 @@ input[type="text"] {
   display: block;
   margin: auto;
 }
+
+h1{
+  margin-top: 25px;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-align: center;
+}
