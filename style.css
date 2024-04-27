@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  max-height: 2000px;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #6072A0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  color: white;
+}
+
+body {
+  
+  background-color: #676F84;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #24252a;
+  height: 80px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+nav {
+  order: 4;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  order: 2;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+a.active, a:hover {
+  background: none;
+  color: #4FD6E8;
+  font-weight: bold;
+  transition: .10s;
+}
+
+a.linklogo:active, a.linklogo:hover {
+  background: transparent;
+}
+.headvideo {
+  color: white;
+  margin-top: 60px;
+  margin-left: 60px;
+  justify-content: space-between;
+}
+
+.headvideo h1 {
+  width: auto;
+  text-align: center;
+}
+
+.headvideo h2 {
+  width: auto;
+  text-align: center;
+}
+
+.headvideo h1 {
+  margin-bottom: 10px;
+}
+
+.iframe-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 300px; /* Defina a altura conforme necessário */
+}
+
+iframe {
+  border-radius: 30px;
+}
+
+
+.midtext {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.calculadoras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Adiciona espaço entre os elementos flex */
+}
+
+
+.calc, .calctri, .calccirc {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.calctri {
+  margin-left: 20px; /* Adiciona margem entre .calc e .calctri */
+}
+
+.calctri h1{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.calctri h2{
+  padding: 5px;
+}
+
+.calccirc {
+  margin-left: 20px; /* Adiciona margem entre .calc e .calctri */
+}
+.calccirc h1{
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.calccirc h2{
+  padding: 5px;
+}
+
+footer {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px ;
+  margin-top: 100px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+footer h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.info-container {
+  display: flex; /* Torna os elementos filhos flexíveis */
+  justify-content: center; /* Alinha os itens ao centro horizontalmente */
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+}
+
+.guiinfo, .madinfo {
+  flex: 1; /* Os itens irão ocupar a mesma quantidade de espaço */
+  text-align: center; /* Alinha o conteúdo ao centro */
+}
+
+.info-container > div {
+  margin: 0 10px; /* Adiciona um espaçamento entre as divs */
+}
+
+.guiinfo img, .madinfo img {
+  margin-top: 15px;
+  border-radius: 50%;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.guiinfo h2, .madinfo h2 {
+  margin-top: 2%;
+  color: white;
+  text-align: center;
+}
+
+.github-link, .mail-link {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* Remova a decoração de texto do link */
+  color: rgb(255, 255, 255); /* Altere a cor do texto do link, se necessário */
+}
+
+.github-link i, .mail-link i {
+  font-size: 44px; /* Altere o tamanho do ícone conforme necessário */
+  margin: 0 5px; /* Adicione espaço entre os ícones */
+}
