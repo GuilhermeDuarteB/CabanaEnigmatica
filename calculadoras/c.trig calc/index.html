@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-    <title>Triângulo Retângulo  Calculadora | Cabana Enigmática</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo Trigonométrico Calculadora | Cabana Enigmática</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/430134e04b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../logo.png" type="image/icon type">
 </head>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <a class="logo" href="../../initicialPage/index.html"><img src="#" alt="logo"></a>
+        <a class="logo" href="../../index.html"><img src="../../logo.png" alt="logo"></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="../../initicialPage/index.html">Início</a></li>
+                <li><a href="../../index.html">Início</a></li>
                
               <li class="dropdown">
                 <a href="#">Ajuda Matemática <i class="fa-solid fa-angle-down"></i></a>
@@ -40,9 +44,21 @@
             </ul>
         </nav>
     </header>
-<h1>TRIGONOMETRIA</h1>
+<h1>Círculo Trigonométrico</h1>
+<div class="box">
+<p>Para a utilização da Calculadora do Círculo Trigonométrico precisas:
+    <br>
+    <br>
+    • Colocar um ângulo em graus na caixa, que a calculadora irá automaticamente calcular tudo.
+    <br>
+    <br>
+    • Para mais ajuda podes ir á nossa página de <a href="../../helpMat/c.trigonometrico/index.html">Círculo Trigonométricos</a>
+</p>
+</div>
+
+
 <div id="container">
-    <div id="angle-input-container">
+    <div id="idangle-input-container">
         <p>Insira um ângulo (em graus): <input type="number" id="angleInput" value="0"></p>
         <button onclick="calculateTrigFunctions()">Calcular</button>
         <p>Tangente: <span id="tangentResult"></span></p>

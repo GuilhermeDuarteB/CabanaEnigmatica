@@ -36,21 +36,23 @@ body{
     background-color: #676F84;
 }
 
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252a;
-  }
-  
-  .logo {
-    height: 10px;
-    cursor: pointer;
-    order: 3;
-    margin-right: auto;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%; /* Alterado o padding */
+  background-color: #24252a;
+  height: 80px; /* Adicionado uma altura fixa */
+}
+
+.logo {
+  height: 100%; /* Definindo a altura da logo para ocupar toda a altura do header */
+}
+
+.logo img {
+  height: 100%; /* Definindo a altura da imagem da logo para ocupar toda a altura do div .logo */
+  width: auto; /* Garantindo que a largura da imagem seja ajustada automaticamente */
+}
   
   nav {
     order:4;
@@ -127,21 +129,20 @@ background: transparent;
 
 
 #container {
-    display: flex;
-    justify-content: center;
+  margin-top: 60px; 
+  display: flex;
+  justify-content: center;
 }
 
-#angle-input-container, #circle-container {
-    margin: 20px;
-}
+
 
 #circle {
     width: 300px;
     height: 300px;
-    border: 2px solid #3498db;
+    border: 2px solid black;
     border-radius: 50%;
     position: relative;
-    background: radial-gradient(circle, #2d0c30, #5a1737);
+    background: white;
     transform: rotate(0deg);
 }
 
@@ -166,7 +167,7 @@ background: transparent;
 #angleMarker {
     position: absolute;
     width: 2px;
-    height: 150px;
+    height: 149px;
     background-color: red;
     left: 50%;
     top: 0%;
@@ -182,9 +183,6 @@ background: transparent;
     transform-origin: 50% 100%;
 }
 
-h1, p {
-    text-align: center;
-}
 
 input, button {
     display: block;
@@ -198,9 +196,28 @@ input, button {
     cursor: pointer;
 }
 
-h1{
-    margin-top: 25px;
+
+h1 {
+  margin-top: 25px;
   font-family: "Inter", sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
+
+#idangle-input-container input{
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+p{
+  margin-top: 25px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 15px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+

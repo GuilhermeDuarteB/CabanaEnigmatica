@@ -3,72 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Triângulo Retângulo  Calculadora | Cabana Enigmática</title>
+    <title>Triângulo Retângulo Calculadora | Cabana Enigmática</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/430134e04b.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../../logo.png" type="image/icon type">
 </head>
 <body>
     <header>
-        <a class="logo" href="../../initicialPage/index.html"><img src="#" alt="logo"></a>
+        <a class="logo" href="../../index.html"><img src="../../logo.png" alt="logo"></a>
         <nav>
             <ul class="nav__links">
-                <li><a href="../../initicialPage/index.html">Início</a></li>
-               
-              <li class="dropdown">
-                <a href="#">Ajuda Matemática <i class="fa-solid fa-angle-down"></i></a>
-                <div class="dropdown-menu">
-                    <ul>
-                    <li><a href="../../helpMat/c.trigonometrico/index.html">Circulo Trigonométrico</a></li>   
-                    <li><a href="../../helpMat/t.retangulo/index.html">Triângulo Retângulo</a></li>
-                    <li><a href="../../helpMat/razoes trig/index.html">Razões Trigonométricas</a></li>
-                </ul>   
-                </div>
+                <li><a href="../../index.html">Início</a></li>
+                <li class="dropdown">
+                    <a href="#">Ajuda Matemática <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="../../helpMat/c.trigonometrico/index.html">Círculo Trigonométrico</a></li>   
+                            <li><a href="../../helpMat/t.retangulo/index.html">Triângulo Retângulo</a></li>
+                            <li><a href="../../helpMat/razoes trig/index.html">Razões Trigonométricas</a></li>
+                        </ul>   
+                    </div>
                 </li>
                 <li class="dropdown">
                     <a href="#">Calculadoras <i class="fa-solid fa-angle-down"></i></a>
                     <div class="dropdown-menu">
                         <ul>
-                        <li><a href="../../calculadoras/calculator/index.html">Calculadora</a></li>   
-                        <li><a href="index.html">Triângulo Retângulo</a></li>
-						<li><a href="../c.trig calc/index.html">Circulo Trigonométrico</a></li>
-                    </ul>   
+                            <li><a href="../../calculadoras/calculator/index.html">Calculadora</a></li>   
+                            <li><a href="index.html">Triângulo Retângulo</a></li>
+                            <li><a href="../c.trig calc/index.html">Círculo Trigonométrico</a></li>
+                        </ul>   
                     </div>
-                    </li>
+                </li>
             </ul>
         </nav>
     </header>
     <h1>Triângulo Retangular</h1>
-    <label for="alpha">Ângulo Alfa (em graus):</label>
-    <input type="text" id="alpha" placeholder="Digite o ângulo alfa">
-    <br><br>
+    <p>
+        A calculadora de triângulo retângulo foi criada para calcular os comprimentos dos lados de um triângulo que tem um ângulo reto de 90 graus.
+    </p>
+
+       <p>Para determinar os lados:</p>
+        
+       <p> •  Forneçe o valor do ângulo Alfa (α) em graus, que é o ângulo entre o lado B ou C do triângulo conhecido.
+        <br>
+        •  Insere na calculadora o comprimento conhecido de um dos lados (A, B ou C) e o ângulo Alfa.
+        <br>
+        • Os comprimentos dos outros dois lados do triângulo serão calculados pela calculadora.
+        Após a vírgula, o resultado será mostrado em duas casas decimais. 
+        <br>
+        • Certifique-se de colocar valores corretos e que o ângulo Alfa seja em graus.
+        <br>
+        <br>
+    </p><div class="info">
+    Encontra mais informações sobre o <a href="../../helpMat/t.retangulo/index.html">Triângulo Retângulo</a></div>
+    <div class="alpharep">
+        <label for="alpha">Ângulo Alfa (em graus):</label>
+        <input type="text" id="alpha" placeholder="Digite o ângulo alfa">
+    </div>  
     <table>
         <tr>
-            <th>Lado X</th>
-            <th>Lado Y</th>
-            <th>Lado Z</th>
+            <th>Lado B</th>
+            <th>Lado A</th>
+            <th>Lado C</th>
         </tr>
         <tr>
-            <td><input type="text" id="x" placeholder="Digite o valor de x"></td>
-            <td><input type="text" id="y" placeholder="Digite o valor de y"></td>
-            <td><input type="text" id="z" placeholder="Digite o valor de z"></td>
+            <td><input type="text" id="x" placeholder="Digite o valor de B"></td>
+            <td><input type="text" id="y" placeholder="Digite o valor de A"></td>
+            <td><input type="text" id="z" placeholder="Digite o valor de C"></td>
         </tr>
     </table>
     <br>
-    <svg id="triangle" width="200" height="20   0">
+    <svg id="triangle" width="250" height="250">
         <polygon points="10,10 10,190 190,190" fill="gray" />
         <text x="11" y="185" fill="black">90°</text>
-        <text x="190" y="185" fill="black">α</text>
-        <text x="10" y="10" fill="black">Y</text>
-        <text x="10" y="200" fill="black">X</text>
-        <text x="95" y="100" fill="black">Z</text>
+        <text x="155" y="185" fill="black">α</text>
+        <text x="-1" y="100" fill="black">A</text>
+        <text x="85" y="210" fill="black">B</text>
+        <text x="105" y="100" fill="black">C</text>
     </svg>
 
     <div class="container">
-    <button onclick="calcularLadosManual()">Calcular Lados</button>
-</div>
-  <script src="script.js"></script>
+        <button onclick="calcularLadosManual()">Calcular Lados</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
